@@ -54,15 +54,15 @@ faccess = "0.2.4"
 version = "4.1.1"
 features = ["suggestions", "color", "wrap_help", "cargo", "unstable-grouped", "derive"]
 
-[dependencies.chrono]
-version = "0.4.23"
-default-features = false
-features = ["std", "clock"]
 
 [dependencies.lscolors]
 version = "0.14"
 default-features = false
 features = ["nu-ansi-term"]
+
+[dependencies.time]
+version = "0.3"
+features = ["parsing", "local-offset"]
 
 [target.'cfg(unix)'.dependencies]
 users = "0.11.0"
